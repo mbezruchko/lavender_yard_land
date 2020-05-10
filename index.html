@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Лавандовый дворик</title>
+        <!-- <link rel='shortcut icon' href='img/favicon.ico' type='image/ico'> -->
+        <link href='styles/css/common.min.css' rel='stylesheet'>
+        <link href='styles/css/icons.min.css' rel='stylesheet'>
+        <link href='styles/css/header.min.css' rel='stylesheet'>
+        <link href='styles/css/footer.min.css' rel='stylesheet'>
+        <link href='styles/css/home.min.css' rel='stylesheet'>
+        <script src='js/common.js' type='text/javascript' charset="utf-8"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div id='wrapper-menu' class='wrapper-menu'>
+                <figure>
+                    <a href='index.html'><img src='./styles/images/logo.png' class='logo' title='Cozy Yard' alt='Logo'></a>
+                </figure>
+                <nav class='menu_items'>
+                    <a class='menu_items-link' href='index.html'>Главная</a>
+                    <a class='menu_items-link' href='apartments.html'>Апартаменты</a>
+                    <a class='menu_items-link' href='gallery.html'>Галерея</a>
+                    <a class='menu_items-link' href='contacts.html'>Контакты</a>
+                </nav>
+                <div class='wrapper-mobile'>
+                    <div class='menu-button' onclick='MobileMenuIsOpen(); return 0;'>
+                        <div class='menu-button_elem'></div>
+                        <div class='menu-button_elem'></div>
+                        <div class='menu-button_elem'></div>
+                    </div>
+                </div>
+            </div>
+            <aside class='mobile-menu'>
+                <div class='mobile-menu_items'>
+                    <a class='mobile-menu_items-link' href='index.html'>Главная</a>
+                    <a class='mobile-menu_items-link' href='apartments.html'>Апартаменты</a>
+                    <a class='mobile-menu_items-link' href='gallery.html'>Галерея</a>
+                    <a class='mobile-menu_items-link' href='contacts.html'>Контакты</a>
+                </div>
+            </aside>
+        </header>
+
+        <main>
+            <!-- <div class='book'>
+                <form action='{% url "check_dates" %}' method='POST' class='book_form'>
+                <div class='book_items'>
+                    <div class='book_item'>
+                    <p>Дата заезда</p>
+                    {{ bookingform.arrival_date }}
+                    </div>
+                    <div class='book_item'>
+                    <p>Дата отъезда</p>
+                    {{ bookingform.departure_date }}
+                    </div>
+                </div>
+                <button class='btn-submit' type='submit'>Забронировать</button>
+                </form>
+            </div> -->
+
+            <div class='main_title'>
+                <h2>Лавандовый дворик</h2>
+                <span>отель</span>
+            </div>
+            <div class='about_hotel'>
+                <div class='about_hotel_item'>
+                <img src='styles/images/slider-img/house1.jpg'>
+                <div class='descr_hotel'>
+                    <p>Гостевой дом <strong>«Лавандовый дворик»</strong> расположен в Судаке, в 5 км от Генуэзской крепости. К услугам гостей сад, бесплатная частная парковка, принадлежности для барбекю и терраса. В гостевом доме работает экскурсионное бюро и предоставляется бесплатный Wi-Fi. В распоряжении гостей круглосуточная стойка регистрации, общая кухня и пункт обмена валюты.</p>
+                </div>
+                </div>
+                <div class='about_hotel_item'>
+                <div class='descr_hotel'>
+                    <p>Близкое расположение горы Алчак, вдоль которой есть туристическая тропа с живописными видами. Виды на горы Судака и бухту. В 10-15-ти минутах ходьбы, находится аквапарк, близкое расположение городского и дикого пляжей, магазинов, кафе, ресторанов.</p>
+                </div>
+                <img src='styles/images/slider-img/house2.jpg'>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+                <div class='footer_links'>
+                    <ul>
+                        <li><h4>Лавандовый дворик</h4></li>
+                        <li><a class='footer_links-link' href='index.html'>Главная</a></li>
+                        <li><a class='footer_links-link' href='apartments.html'>Апартаменты</a></li>
+                        <li><a class='footer_links-link' href='gallery.html'>Галерея</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>Апартаменты</h4></li>
+                        <li><a class='footer_links-link' href='#'>Цены</a></li>
+                        <li><a class='footer_links-link' href='#'>Бронирование</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>Контакты</h4></li>
+                        <li><a class='footer_links-link' href='#'>Как связаться</a></li>
+                    </ul>
+                    <ul>
+                        <li><h4>О нас</h4></li>
+                        <li><a class='footer_links-link' href='#'>Кто мы</a></li>
+                    </ul>
+                </div>
+                <div class='footer_social-info'>
+                    <div class='footer_social-info_icons'>
+                        <a href='https://wa.me/79780268333' target='_blank'><i class='info_icon icon-whatsapp-brands'></i></a>
+                        <a href='viber://add?number=79780268333' target='_blank'><i class='info_icon icon-viber-brands'></i></a>
+                        <a href='{{ constance.SOCIAL_VK }}' target='_blank'><i class='info_icon icon-vk-brands'></i></a>
+                        <!-- <a href='{{ constance.SOCIAL_FACEBOOK }}' target='_blank'><i class='info_icon icon-facebook-brands'></i></a> -->
+                    </div>
+                    <div class='footer_social-info_contacts'>
+                        <a href='mailto:lavender_yard@gmail.com'>Email: lavender_yard@gmail.com</a>
+                        <p>Адрес : Крым,  город Судак,  улица Алчак-Кая 21</p>
+                    </div>
+                </div>
+        </footer>
+    </body>
+</html>

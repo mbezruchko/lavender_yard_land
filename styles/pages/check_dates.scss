@@ -1,0 +1,55 @@
+@import '../modules/colors';
+
+// .calendar {
+//   width: 200px;  
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // text-align: center;
+//   border: 1px solid black;
+// }
+
+.check_dates {
+  padding: 2% 0;
+  .room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    &_title-wrapper {
+      display: flex;
+      margin-top: 10px;
+    }
+    &_status-info {
+      &__free, &__restriction {
+        height: 100%;
+        padding: 5px;
+        margin: 5px 5px 0;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+      }
+      &__free {
+        background-color: #30D058;
+      }
+      &__restriction {
+        background-color: #FF9F0A;
+        margin-bottom: 10px;
+      }
+    }
+    &_available-dates {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      width: 500px;
+      border: 1px solid $dark-gray-6;
+      overflow: scroll;
+      .date {
+        padding: 5px;
+      }
+    }
+    img {
+      width: 600px;
+      height: 400px;
+    }
+  }
+}

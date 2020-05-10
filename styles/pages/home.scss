@@ -1,0 +1,135 @@
+@import '../modules/colors';
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 35px 0;
+  .book {
+    width: auto;
+    padding: 25px;
+    position: absolute;
+    top: 23rem;
+    border-radius: 5px;
+    background-color: $glass-dark-gray-5;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 1px 2px $glass-dark-gray-4;
+    &_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px 0;
+    }
+    &_items {
+      display: flex;
+    }
+    &_item {
+      margin: 0 5px 20px;
+      p {
+        margin-top: 5px;
+        color: $text-white;
+        font-weight: bold;
+      }
+      input {
+        margin: 5px;
+        padding: 8px;
+        padding-right: 0;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(242, 242, 247, 0.6);
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .main_title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
+  .about_hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_item {
+      display: flex;
+    }
+    img {
+      height: 350px;
+      padding: 10px;
+      margin: 20px;
+      box-shadow: 0 0 10px 0 $dark-gray-5;
+    }
+    .descr_hotel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    .about_hotel {
+      &_item {
+        align-items: center;
+        &:first-child {
+          flex-direction: column-reverse;
+        }
+        &:last-child {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    .main_title {
+      margin-bottom: 0;
+    }
+    .about_hotel {
+      .descr_hotel {
+        width: 90%;
+      }
+      img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  main {
+    padding: 50px 0;
+    .book {
+      width: 80%;
+      top: 7rem;
+      padding: 10px 0;
+      input {
+        max-width: 110px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main {
+    .book {
+      width: 90%;
+    }
+  }
+}

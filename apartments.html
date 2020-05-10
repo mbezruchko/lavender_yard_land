@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>Лавандовый дворик</title>
+        <!-- <link rel='shortcut icon' href='img/favicon.ico' type='image/ico'> -->
+        <link href='styles/css/common.min.css' rel='stylesheet'>
+        <link href='styles/css/icons.min.css' rel='stylesheet'>
+        <link href='styles/css/header.min.css' rel='stylesheet'>
+        <link href='styles/css/footer.min.css' rel='stylesheet'>
+        <link href='styles/css/apartments.min.css' rel='stylesheet'>
+        <script src='js/common.js' type='text/javascript' charset="utf-8"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div id='wrapper-menu' class='wrapper-menu'>
+              <figure>
+                <a href='index.html'><img src='./styles/images/logo.png' class='logo' title='Cozy Yard' alt='Logo'></a>
+              </figure>
+                <nav class='menu_items'>
+                    <a class='menu_items-link' href='index.html'>Главная</a>
+                    <a class='menu_items-link' href='apartments.html'>Апартаменты</a>
+                    <a class='menu_items-link' href='gallery.html'>Галерея</a>
+                    <a class='menu_items-link' href='contacts.html'>Контакты</a>
+                </nav>
+                <div class='wrapper-mobile'>
+                    <div class='menu-button' onclick='MobileMenuIsOpen(); return 0;'>
+                        <div class='menu-button_elem'></div>
+                        <div class='menu-button_elem'></div>
+                        <div class='menu-button_elem'></div>
+                    </div>
+                </div>
+            </div>
+            <aside class='mobile-menu'>
+                <div class='mobile-menu_items'>
+                    <a class='mobile-menu_items-link' href='index.html'>Главная</a>
+                    <a class='mobile-menu_items-link' href='apartments.html'>Апартаменты</a>
+                    <a class='mobile-menu_items-link' href='gallery.html'>Галерея</a>
+                    <a class='mobile-menu_items-link' href='contacts.html'>Контакты</a>
+                </div>
+            </aside>
+        </header>
+
+        <section class='apartments'>
+          <div class='apartments_title'>
+            <h1>Апартаменты</h1>
+            <p>Мы предлагаем Вам насладится тишиной и отдыхом в наших уютных аппартаментах.</p>
+          </div>
+          <div class='apartments_item'>
+            <img src='./styles/images/apartment-img/ap-1/ap-1_bedroom_ph-1-opt.jpg' alt='Заглавная фотография'>
+            <div class='apartments_item_title'>
+              <h3>Четырехместный номер 'Люкс'</h3>
+              <p>Двухспальная кровать, санузел, дополнительная кровать, журнальный столик, шкаф для одежды, телевизор.</p>
+              <a href='separate_apartment_1.html'><button class='btn-submit' type='submit'>Смотреть подробнее</button></a>
+            </div>
+          </div>
+          <div class='apartments_item'>
+            <img src='./styles/images/apartment-img/ap-2/ap-2_bedroom_ph-1-opt.jpg' alt='Заглавная фотография'>
+            <div class='apartments_item_title'>
+              <h3>Четырехместный номер 'Комфорт'</h3>
+              <p>Двухспальная кровать, санузел, дополнительная кровать, журнальный столик, шкаф для одежды, телевизор.</p>
+              <a href='separate_apartment_2.html'><button class='btn-submit' type='submit'>Смотреть подробнее</button></a>
+            </div>
+          </div>
+          <div class='apartments_item'>
+            <img src='./styles/images/apartment-img/ap-3/ap-3_bedroom_ph-1-opt.jpg' alt='Заглавная фотография'>
+            <div class='apartments_item_title'>
+              <h3>Четырехместный номер с балконом</h3>
+              <p>Двухспальная кровать, санузел, дополнительная кровать, журнальный столик, шкаф для одежды, телевизор.</p>
+              <a href='separate_apartment_3.html'><button class='btn-submit' type='submit'>Смотреть подробнее</button></a>
+            </div>
+          </div>
+          <div class='apartments_item'>
+            <img src='./styles/images/apartment-img/ap-0/ap-0_bedroom_ph-2-opt.jpg' alt='Заглавная фотография'>
+            <div class='apartments_item_title'>
+              <h3>Дом с 2 спальнями</h3>
+              <p>Двухспальная кровать, санузел, дополнительная кровать, журнальный столик, шкаф для одежды, телевизор.</p>
+              <a href='separate_apartment_0.html'><button class='btn-submit' type='submit'>Смотреть подробнее</button></a>
+            </div>
+          </div>
+        </section>
+        
+
+        <footer>
+          <div class='footer_links'>
+              <ul>
+                  <li><h4>Лавандовый дворик</h4></li>
+                  <li><a class='footer_links-link' href='index.html'>Главная</a></li>
+                  <li><a class='footer_links-link' href='apartments.html'>Апартаменты</a></li>
+                  <li><a class='footer_links-link' href='gallery.html'>Галерея</a></li>
+              </ul>
+              <ul>
+                  <li><h4>Апартаменты</h4></li>
+                  <li><a class='footer_links-link' href='#'>Цены</a></li>
+                  <li><a class='footer_links-link' href='#'>Бронирование</a></li>
+              </ul>
+              <ul>
+                  <li><h4>Контакты</h4></li>
+                  <li><a class='footer_links-link' href='#'>Как связаться</a></li>
+              </ul>
+              <ul>
+                  <li><h4>О нас</h4></li>
+                  <li><a class='footer_links-link' href='#'>Кто мы</a></li>
+              </ul>
+          </div>
+          <div class='footer_social-info'>
+              <div class='footer_social-info_icons'>
+                  <a href='https://wa.me/79780268333' target='_blank'><i class='info_icon icon-whatsapp-brands'></i></a>
+                  <a href='viber://add?number=79780268333' target='_blank'><i class='info_icon icon-viber-brands'></i></a>
+                  <a href='{{ constance.SOCIAL_VK }}' target='_blank'><i class='info_icon icon-vk-brands'></i></a>
+                  <!-- <a href='{{ constance.SOCIAL_FACEBOOK }}' target='_blank'><i class='info_icon icon-facebook-brands'></i></a> -->
+              </div>
+              <div class='footer_social-info_contacts'>
+                  <a href='mailto:lavender_yard@gmail.com'>Email: lavender_yard@gmail.com</a>
+                  <p>Адрес : Крым,  город Судак,  улица Алчак-Кая 21</p>
+              </div>
+          </div>
+      </footer>
+    </body>
+</html>

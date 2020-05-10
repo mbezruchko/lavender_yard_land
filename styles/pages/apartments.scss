@@ -1,0 +1,71 @@
+@import '../modules/colors';
+
+.apartments {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  p {
+    font-size: 18px;
+  }
+  &_title {
+    text-align: center;
+  }
+  &_item:nth-child(2n) {
+    background-color: rgba(248, 230, 213, 0.6);
+  }
+  &_item:nth-child(2n+1) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &_item {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 10%;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    img {
+      width: 50%;
+      margin: 0 20px;
+    }
+    &_title {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      p {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .apartments {
+    &_item {
+      padding: 5%;
+      &_title {
+          font-size: 16px;
+      }
+      p {
+          font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .apartments {
+    &_item:nth-child(2n+1) {
+      flex-direction: column;
+    }
+    &_item {
+      flex-direction: column;
+      align-items: center;
+      padding: 15% 5%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

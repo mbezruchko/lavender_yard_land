@@ -1,0 +1,130 @@
+@import './fonts.scss';
+@import './colors';
+
+html {
+  font-family: 'Raleway-Light';
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__isOpen {
+  position: fixed;
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: $text-white;
+  text-decoration: none;
+  &:hover {
+    font-weight: bold;
+  }
+  &:focus {
+    font-weight: bold;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+  &::-moz-placeholder {
+    color: $dark-gray-1;
+  }
+  &::-webkit-input-placeholder {
+    color: $dark-gray-1;
+  }
+}
+
+.btn-submit {
+  width: 150px;
+  height: 40px;
+  background-color: $dark-gray-5;
+  border: 1px solid #48c77dc7;
+  border-radius: 5px;
+  color: #48c77dc7;
+  transition: all 0.2s ease;
+  &:hover {
+    color: #48c77d;
+  }
+  &:focus {
+    outline: none;
+    color: #48c77d;
+    border: 1px solid #48c77d;
+  }
+}
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.alert {
+  width: max-content;
+  height: 30px;
+  position: fixed;
+  right: -300px; bottom: 3%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition: 0.35s ease;
+  z-index: 10000;
+}
+.alert__show {
+  position: fixed;
+  right: 3%; bottom: 3%;
+}
+.alert {
+  &-success {
+    background-color: rgba(99, 230, 116, 0.9);
+  }
+  &-error {
+    background-color: rgba(228, 99, 99, 0.9);
+  }
+  &-warning {
+    // background-color: rgb(99, 230, 117);
+  }
+  &-info {
+    // background-color: rgb(99, 230, 117);
+  }
+}
+
+
+// HOVER ICONS
+// .icon-vk-brands:hover {
+//   color: $social-vk;
+// }
+// .icon-facebook-brands:hover {
+//   color: $social-facebook;
+// }
+// .icon-viber-brands:hover {
+//   color: $social-viber;
+// }
+// .icon-whatsapp-brands:hover {
+//   color: $social-whatsapp;
+// }
+// .icon-youtube-brands:hover {
+//   color: $social-youtube;
+// }
+// .icon-login:hover {
+//   color: #34C758;
+// }
+// .icon-logout:hover {
+//   color: #FF2D55;
+// }
