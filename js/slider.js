@@ -28,7 +28,6 @@ window.onload = () => {
   }, seconds(4))
 
   nextSlide = () =>  {
-    console.log(header_arrows)
     lockArrow()
     slider.scrollLeft += slider.clientWidth
     clearInterval(autoSlide)
