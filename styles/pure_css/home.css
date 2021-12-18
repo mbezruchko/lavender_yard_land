@@ -1,0 +1,183 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  padding: 35px 0;
+}
+
+main .book {
+  width: auto;
+  padding: 25px;
+  position: absolute;
+  top: 23rem;
+  border-radius: 5px;
+  background-color: rgba(44, 43, 46, 0.8);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  -webkit-box-shadow: 0 1px 2px rgba(58, 58, 60, 0.8);
+          box-shadow: 0 1px 2px rgba(58, 58, 60, 0.8);
+}
+
+main .book_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main .book_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .book_item {
+  margin: 0 5px 20px;
+}
+
+main .book_item p {
+  margin-top: 5px;
+  color: #f2f2f7;
+  font-weight: bold;
+}
+
+main .book_item input {
+  margin: 5px;
+  padding: 8px;
+  padding-right: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(242, 242, 247, 0.6);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+main .main_title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+main .main_title h2 {
+  margin-bottom: 5px;
+}
+
+main .about_hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about_hotel_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .about_hotel img {
+  height: 350px;
+  padding: 10px;
+  margin: 20px;
+  -webkit-box-shadow: 0 0 10px 0 #1b1b1e;
+          box-shadow: 0 0 10px 0 #1b1b1e;
+}
+
+main .about_hotel .descr_hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+}
+
+main .about_hotel .descr_hotel p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  main .about_hotel_item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .about_hotel_item:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .about_hotel_item:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .main_title {
+    margin-bottom: 0;
+  }
+  main .about_hotel .descr_hotel {
+    width: 90%;
+  }
+  main .about_hotel img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    padding: 50px 0;
+  }
+  main .book {
+    width: 80%;
+    top: 7rem;
+    padding: 10px 0;
+  }
+  main .book input {
+    max-width: 110px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  main .book {
+    width: 90%;
+  }
+}
